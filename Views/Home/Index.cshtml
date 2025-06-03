@@ -23,6 +23,12 @@
                         <input type="hidden" name="id" value="@task.Id" />
                         <button type="submit">اكتملت</button>
                     </form>
+                    <!-- TODO: إضافة زر تعديل المهمة -->
+                    <form method="post" asp-action="EditTask" style="display:inline; margin-left: 10px;">
+                        <input type="hidden" name="id" value="@task.Id" />
+                        <input type="text" name="newTitle" placeholder="عنوان جديد" />
+                        <button type="submit">تعديل</button>
+                    </form>
 
                 }
             </li>
